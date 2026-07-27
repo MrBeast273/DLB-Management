@@ -56,7 +56,7 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div style={{ display: 'flex', gap: '12px' }}>
-              {['facebook-f', 'linkedin-in', 'instagram', 'whatsapp'].map((icon, idx) => (
+              {['facebook-f','instagram', 'whatsapp'].map((icon, idx) => (
                 <a
                   key={idx}
                   href="/social"
@@ -114,11 +114,11 @@ const Footer = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', fontSize: '0.9rem', color: 'rgba(255, 255, 255, 0.8)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <i className="fas fa-phone-alt" style={{ color: '#F57C20' }}></i>
-                <a href="tel:03055555555" style={{ color: '#FFFFFF', textDecoration: 'none', fontWeight: 600 }}>0305-5555555</a>
+                <a href="tel:03055555555" style={{ color: '#FFFFFF', textDecoration: 'none', fontWeight: 600 }}>708-773-7125</a>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <i className="fas fa-envelope" style={{ color: '#F57C20' }}></i>
-                <span>info@dlbmanagement.com</span>
+                <span>James.dispatch024@gmail.com</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <i className="fas fa-clock" style={{ color: '#F57C20' }}></i>
@@ -149,6 +149,7 @@ const Footer = () => {
             <a href="/privacy" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Privacy Policy</a>
             <a href="/terms" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Terms of Service</a>
           </div>
+
         </div>
       </div>
     </footer>

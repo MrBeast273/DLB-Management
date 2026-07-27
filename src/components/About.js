@@ -1,9 +1,13 @@
 import React from 'react';
-
+import { Helmet } from 'react-helmet-async';
 const About = () => {
   return (
     <div style={{ backgroundColor: '#0A1628', color: '#FFFFFF', minHeight: '100vh' }}>
-      
+     <div> <Helmet>
+        <title>About DLB Management LLC</title>
+        <meta name="description" content="Learn more about DLB Management LLC and our commitment to empowering truckers with top dispatch solutions." />
+      </Helmet>
+  
       {/* 1. Page Header Banner */}
       <section
         style={{
@@ -181,6 +185,7 @@ const About = () => {
         </div>
       </section>
 
+    </div>
     </div>
   );
 };

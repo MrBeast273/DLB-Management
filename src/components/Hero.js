@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Link component import kiya gaya hai
+import { Helmet } from 'react-helmet-async';
 
 const Hero = () => {
   return (
@@ -16,6 +18,16 @@ const Hero = () => {
         overflow: 'hidden',
       }}
     >
+      <div>
+        <Helmet>
+          <title>DLB Management LLC | Professional Business Management & Consulting</title>
+          <meta 
+            name="description" 
+            content="DLB Management LLC offers top-rated business management and consulting services to optimize operations and scale your enterprise. Contact us today!" 
+          />
+        </Helmet>
+      </div>
+
       {/* Background Decorative Overlay Line/Pattern */}
       <div
         style={{
@@ -113,7 +125,7 @@ const Hero = () => {
               }}
             >
               <a
-                href="tel:03055555555"
+                href="tel:708-773-7125"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -142,8 +154,9 @@ const Hero = () => {
                 Start Dispatching <i className="fas fa-arrow-right"></i>
               </a>
 
-              <a
-                href="#services"
+              {/* Updated Services Button using React Router Link */}
+              <Link
+                to="/services"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -168,7 +181,7 @@ const Hero = () => {
                 }}
               >
                 Our Services
-              </a>
+              </Link>
             </div>
 
             {/* Quick Stats Grid */}

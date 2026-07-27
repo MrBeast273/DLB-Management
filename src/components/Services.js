@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet-async';
 const Services = () => {
   const serviceList = [
     {
@@ -39,6 +39,11 @@ const Services = () => {
 
   return (
     <div style={{ backgroundColor: '#0A1628', color: '#FFFFFF', minHeight: '100vh' }}>
+        <div><Helmet>
+              <title>Services DLB Management LLC</title>
+              <meta name="description" content="Explore the comprehensive services offered by DLB Management LLC to empower truckers with top-tier dispatch solutions." />
+            </Helmet>
+        
       {/* 1. Header Banner */}
       <section
         style={{
@@ -248,7 +253,8 @@ const Services = () => {
           </Link>
         </div>
       </section>
-    </div>
+    
+    </div></div>
   );
 };
 
